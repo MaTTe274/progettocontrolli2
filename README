@@ -1,6 +1,6 @@
-# Controllo di Sistema con MATLAB
+# Controllo di Sistema con MATLAB #
 
-## Descrizione del Progetto
+## Descrizione del Progetto ##
 Questo progetto è un'esercitazione pratica per la progettazione e l'implementazione di un controllore per un sistema complesso utilizzando MATLAB. Il sistema in questione è descritto da componenti termici e meccanici, e l'obiettivo è progettare un controllore che soddisfi specifici requisiti di prestazione.
 
 ## Componenti del Progetto
