@@ -1,28 +1,45 @@
-# Controllo di Sistema con MATLAB 
+# Sistema di Controllo per Sollevamento Verticale con Attuatore SMA
 
-## Descrizione del Progetto 
-Questo progetto è un'esercitazione pratica per la progettazione e l'implementazione di un controllore per un sistema complesso utilizzando MATLAB. Il sistema in questione è descritto da componenti termici e meccanici, e l'obiettivo è progettare un controllore che soddisfi specifici requisiti di prestazione.
+Questo progetto è un sistema di controllo per un sistema di sollevamento verticale che utilizza un attuatore a forma di memoria di forma (SMA). Lo scopo principale del sistema è sollevare un carico verticale in modo controllato utilizzando l'attuatore SMA.
 
-## Componenti del Progetto
-Il progetto include i seguenti componenti:
+## Descrizione del Progetto
 
-1. **Documentazione**: Questa directory contiene la documentazione dettagliata del progetto, comprese specifiche, requisiti di controllo e istruzioni per la progettazione del controllore.
+Il sistema di sollevamento verticale è composto da un attuatore SMA, un sensore di posizione, un microcontrollore e un software di controllo. L'attuatore SMA è un tipo di attuatore che sfrutta le proprietà di memoria di forma di alcuni materiali per generare movimento. Il sensore di posizione monitora la posizione del carico sollevato, mentre il microcontrollore controlla l'attuatore e riceve i dati dal sensore di posizione per regolare il movimento.
 
-2. **Codice MATLAB**: Questa directory contiene i file MATLAB utilizzati per la progettazione, la simulazione e l'implementazione del controllore per il sistema descritto.
+## Requisiti del Sistema
 
-## Requisiti di Sistema
-Per eseguire il codice MATLAB e testare il controllore progettato, è necessario avere installato MATLAB sul proprio sistema.
+Il sistema richiede i seguenti componenti:
 
-## Istruzioni per l'Utilizzo
-Per utilizzare questo progetto, seguire i seguenti passaggi:
+- Attuatore a Memoria di Forma (SMA)
+- Sensore di Posizione
+- Microcontrollore (Arduino, Raspberry Pi, etc.)
+- Software di Controllo (implementato in un linguaggio di programmazione come C/C++, Python, ecc.)
 
-1. Clonare il repository sul proprio sistema locale.
-2. Aprire MATLAB e navigare alla directory contenente il codice MATLAB.
-3. Eseguire i file MATLAB per la progettazione e la simulazione del controllore.
-4. Seguire le istruzioni fornite nella documentazione per l'implementazione del controllore sul sistema reale.
+## Installazione
 
-## Collaborazione
-Sono benvenuti contributi e miglioramenti a questo progetto. Se desideri contribuire, effettua una richiesta di pull con le tue modifiche.
+1. Collegare l'attuatore SMA al microcontrollore seguendo lo schema elettrico fornito.
+2. Collegare il sensore di posizione al microcontrollore.
+3. Installare il software di controllo sul microcontrollore.
+4. Configurare il software di controllo con i parametri necessari, come la soglia di temperatura per l'attivazione dell'attuatore SMA e i limiti di posizione del carico sollevato.
+
+## Utilizzo
+
+1. Accendere il sistema.
+2. Avviare il software di controllo sul microcontrollore.
+3. Impostare la posizione desiderata per il carico sollevato.
+4. Il sistema controllerà l'attuatore SMA per sollevare o abbassare il carico fino alla posizione desiderata.
+5. Monitorare costantemente il funzionamento del sistema e intervenire in caso di necessità.
+
+## Contributi
+
+Le contribuzioni a questo progetto sono benvenute! Sentiti libero di aprire una nuova issue se trovi dei bug o se hai delle idee per migliorare il sistema.
 
 ## Licenza
-Questo progetto è concesso in licenza con la Licenza MIT. Consultare il file LICENSE per ulteriori informazioni.
+
+Questo progetto è distribuito con licenza [Nome della Licenza]. Consultare il file LICENSE per maggiori informazioni.
+
+## Contatti
+
+Per ulteriori informazioni su questo progetto, contattare [Nome del Proprietario del Progetto] all'indirizzo email [email@example.com].
+
+
