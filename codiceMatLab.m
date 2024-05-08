@@ -22,7 +22,7 @@ z_star = 4.2 * 10^-2;       % metri
 g = 9.81;                   % m*s^2
 
 
-K_star = (m*g*r2)/r1*(dl_max - r1/r2 * z_star);
+K_star = (m*g*r2)/(r1*(dl_max - r1/(r2 * z_star)));
 
 x2_e = Tavg + (Tdiff/c)*log(K_star/K_max - K_star);
 
