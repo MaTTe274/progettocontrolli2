@@ -20,17 +20,17 @@ Le = 55 * 10^-3;            % induttanza (H)
     
     % Cella di Peltier
     Rth = 16.7;             % resistenza termica (ohm)
-    Tp = 15;                % temperatura cella (gradi)
+    Tp = 15+273,15;                % temperatura cella (gradi)
 
     % Convezione con l'ambiente
     h = 6.55;               % coefficiente di convezione (W / (m^2 * K))
     S = pi * d * l;         % superficie cilindrica (m^2)
-    Tamb = 24;              % temperatura ambiente (gradi)
+    Tamb = 24+273,15;              % temperatura ambiente (gradi)
 
 % ATTUATORE SMA
 
 K_max = 3.92 * 10^3;        % (N/m)
-Tavg = 70;                  % (gradi)
+Tavg = 70+273,15;                  % (gradi)
 Tdiff = 20;                 % (gradi)
 dl_max = 0.6 * 10^-2;       % deformazione filo, 96% di l (metri)
 c = 6.2;                    % costante
@@ -90,3 +90,5 @@ G = tf(pippo);
 
 figure;
 bode(G);
+
+
