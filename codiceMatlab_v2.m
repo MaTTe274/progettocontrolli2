@@ -1,3 +1,4 @@
+clear; close all; clc; 
 % DATI
 
 % SISTEMA MECCANICO
@@ -5,7 +6,7 @@
 r1 = 0.45 * 10^-2;          % raggio interno puleggia (metri)
 r2 = 4.5 * 10^-2;           % raggio esterno puleggia (metri)
 J = 2 * 10^-4;              % inerzia (kg*m^2)
-m = 10;                     % massa (grammi)
+m = 10 * 10^-3;             % massa (kilogrammi)
 beta = 1.6;                 % coefficiente smorzatore (N * s / m)
 g = 9.81;                   % accelerazione di gravità (m / s^2)
 
