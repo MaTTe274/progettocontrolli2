@@ -91,4 +91,9 @@ G = tf(pippo);
 figure;
 bode(G);
 
+figure;
+pzmap(G);
+
+figure
+step(G);
 
