@@ -46,15 +46,15 @@ Kstar = m*g*r2/(r1*(deltalmax-r1*zstar/r2));
 x2eq = Ta+Td*log(Kstar/(Kmax-Kstar))/c;
 Kx2eq = Kmax*(1-(1/(1+exp(c*(x2eq-Ta)/Td))));
 x1eq = sqrt((h*S*(x2eq-Tamb)/Re)+((x2eq-Tp)/Rth));
-
+derivataK = (c*Kmax/Td)*(exp(c*(x2eq-Ta)/Td)/(1+exp(c*(x2eq-Ta)/Td))^2);
 
 
 x11 = -Re/Le;
 x21 = 2*Re*x1eq/Cth;
 x22 = -(h*S+1/Rth)/Cth;
-x42 = r1*(deltalmax-r1*zstar/r2)/r2*(m+J/r2^2)*(exp(c*(x2eq-Ta)/Td)/(1+exp(c*(x2eq-Ta)/Td))^2);
-x43 = -r1^2*Kx2eq/(r2^2*(m+J/r2^2));
-x44 = -beta/(m+J/r2^2);
+x42 = (r1*(deltalmax-r1*zstar/r2)/r2*(m+J/(r2^2)))*derivataK;
+x43 = -r1^2*Kx2eq/(r2^2*(m+J/(r2^2)));
+x44 = -beta/(m+J/(r2^2));
 
 A = [x11  0   0   0  ;
      x21 x22  0   0  ;
