@@ -86,18 +86,27 @@ D = 0;
 
 pippo = ss(A,B,C,D);
 
+s=tf('s')
 G = tf(pippo);
+
 
 [P,Z]=pzmap(G);
 figure;
 bode(G);
+grid on;
 
 figure;
 pzmap(G);
+grid on;
 
 figure
 step(G);
 
+Ge= G*(1/s);
 
+figure;
+pzmap(Ge);
+figure;
+rlocus(Ge);
 
 
